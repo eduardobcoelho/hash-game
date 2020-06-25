@@ -16,6 +16,17 @@
 
 }
 
+.reset {
+
+    width: 70px;
+    height: 45px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 25%;
+
+}
+
 .board-container {
 
     width: 450px;

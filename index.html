@@ -10,23 +10,27 @@
 <body>
 
     <div class="wrapper">
+
+        <button class="reset" onclick="resetBoard()">reset</button>
+
         <div class="board-container">
             <div class="board">
                 
-                <button class="space 0 0" onclick="showTokken(this)"></button>
-                <button class="space 0 1" onclick="showTokken(this)"></button>
-                <button class="space 0 2" onclick="showTokken(this)"></button>
+                <button class="space 0 0" onclick="assignTokken(this)"></button>
+                <button class="space 0 1" onclick="assignTokken(this)"></button>
+                <button class="space 0 2" onclick="assignTokken(this)"></button>
                 
-                <button class="space 1 0" onclick="showTokken(this)"></button>
-                <button class="space 1 1" onclick="showTokken(this)"></button>
-                <button class="space 1 2" onclick="showTokken(this)"></button>
+                <button class="space 1 0" onclick="assignTokken(this)"></button>
+                <button class="space 1 1" onclick="assignTokken(this)"></button>
+                <button class="space 1 2" onclick="assignTokken(this)"></button>
 
-                <button class="space 2 0" onclick="showTokken(this)"></button>
-                <button class="space 2 1" onclick="showTokken(this)"></button>
-                <button class="space 2 2" onclick="showTokken(this)"></button>
+                <button class="space 2 0" onclick="assignTokken(this)"></button>
+                <button class="space 2 1" onclick="assignTokken(this)"></button>
+                <button class="space 2 2" onclick="assignTokken(this)"></button>
                 
             </div>
         </div>
+
     </div>
 
     <script src="js/main.js"></script>

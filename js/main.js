@@ -1,7 +1,5 @@
 var i = 0;
 
-var vIndex = 0;
-
 var canChangeTokken = 0;
 
 var tokken = "X"
@@ -29,8 +27,6 @@ var boardTokken = [
 ]
 
 function resetBoard() {
-
-    vIndex = 0;
 
     let tokkens = document.querySelectorAll(".tokken");
 
@@ -97,14 +93,12 @@ victoryVerify = {
             boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x][y + 1].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x][y + 2].querySelector(".tokken").style.color = "#ff0000";
-            vIndex++;
 
         } else if (y == 2 && boardTokken[x][y - 1] == tokken && boardTokken[x][y - 2] == tokken) {
 
             boardArray[x][y].querySelector(".tokken").style.color = "#ff0000"
             boardArray[x][y - 1].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x][y - 2].querySelector(".tokken").style.color = "#ff0000";
-            vIndex++;
 
         }
 
@@ -117,14 +111,12 @@ victoryVerify = {
             boardArray[x][y].querySelector(".tokken").style.color =  "#ff0000";
             boardArray[x + 1][y].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x + 2][y].querySelector(".tokken").style.color = "#ff0000";
-            vIndex++;
 
         } else if (x == 2 && boardTokken[x-1][y] == tokken && boardTokken[x-2][y] == tokken) {
 
             boardArray[x][y].querySelector(".tokken").style.color =  "#ff0000";
             boardArray[x - 1][y].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x - 2][y].querySelector(".tokken").style.color = "#ff0000";
-            vIndex;
 
         }
 
@@ -138,28 +130,24 @@ victoryVerify = {
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x + 1][y + 1].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x + 2][y + 2].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
                 
             } else if (x == 1 && boardTokken[x - 1][y - 1] == tokken && boardTokken[x + 1][y + 1] == tokken) {
 
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x - 1][y - 1].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x + 1][y + 1].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
 
             } else if (x == 1 && boardTokken[x - 1][y + 1] == tokken && boardTokken[x + 1][y - 1] == tokken) {
 
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x - 1][y + 1].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x + 1][y - 1].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
 
             } else if (x == 2 && boardTokken[x - 1][y - 1] == tokken && boardTokken[x - 2][y - 2] == tokken) {
 
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x - 1][y - 1].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x - 2][y - 2].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
 
             }
         
@@ -168,14 +156,12 @@ victoryVerify = {
             boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x - 1][y + 1].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x - 2][y + 2].querySelector(".tokken").style.color = "#ff0000";
-            vIndex++;
 
         } else if (x == 0 && boardTokken[x + 1][y - 1] == tokken && boardTokken[x + 2][y - 2] == tokken) {
 
             boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x + 1][y - 1].querySelector(".tokken").style.color = "#ff0000";
             boardArray[x + 2][y - 2].querySelector(".tokken").style.color = "#ff0000";
-            vIndex++;
 
         }
         
@@ -191,7 +177,6 @@ victoryVerify = {
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x + 1][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x - 1][y].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
 
             } else if (boardTokken[x][y + 1] == tokken && boardTokken[x][y - 1] == tokken) {
 
@@ -199,7 +184,6 @@ victoryVerify = {
                 boardArray[x][y].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x][y + 1].querySelector(".tokken").style.color = "#ff0000";
                 boardArray[x][y - 1].querySelector(".tokken").style.color = "#ff0000";
-                vIndex++;
 
             }
 

@@ -1,3 +1,5 @@
+// PROJECT STATUS: FINISHED
+
 var i = 0;
 
 var vIndex = 0;

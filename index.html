@@ -1,41 +1,59 @@
-<!-- PROJECT STATUS: FINISHED -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hash game</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="wrapper">
+      <button class="reset" onclick="resetBoard()">reset</button>
 
-        <button class="reset" onclick="resetBoard()">reset</button>
+      <div class="board-container">
+        <div class="board">
+          <button
+            class="space 0 0"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 0 1"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 0 2"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
 
-        <div class="board-container">
-            <div class="board">
-                
-                <button class="space 0 0" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 0 1" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 0 2" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                
-                <button class="space 1 0" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 1 1" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 1 2" onclick="assignTokken(this); verify(); changeTokken();"></button>
+          <button
+            class="space 1 0"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 1 1"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 1 2"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
 
-                <button class="space 2 0" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 2 1" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                <button class="space 2 2" onclick="assignTokken(this); verify(); changeTokken();"></button>
-                
-            </div>
+          <button
+            class="space 2 0"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 2 1"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
+          <button
+            class="space 2 2"
+            onclick="assignTokken(this); verify(); changeTokken();"
+          ></button>
         </div>
-
+      </div>
     </div>
 
     <script src="js/main.js"></script>
-
-</body>
+  </body>
 </html>
